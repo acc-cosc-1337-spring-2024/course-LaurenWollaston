@@ -5,3 +5,6 @@ def display_output():
 def test_config():
     return True
 
+def floatingPointDivision(value1, value2):
+    result = value1/value2
+    return result
