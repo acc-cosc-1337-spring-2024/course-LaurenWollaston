@@ -6,14 +6,9 @@ def get_factorial(num):
     return (factorial)
 
 def sum_odd_numbers(num):
-    i=0
+    i=1
     sum=0
     while (i<=num):
-        if (i%2 == 0):
-            i+=1
-        else:
-            sum +=num
-            i+=1
-    print (sum)
+        sum +=i
+        i+=2
     return sum
-sum_odd_numbers(7)
