@@ -1,1 +1,35 @@
-#
+import repetition
+menu = True
+while menu:
+    print("HOMEWORK 3 MENU")
+    print("1 - FACTORIAL")
+    print("2 -SUM ODD NUMBERS")
+    print("3 - EXIT")
+    menuSelect = int((input ('')))
+    if menuSelect == 1:
+        on = True
+        while on:
+            factorialNum = int((input("ENTER A NUMBER BETWEEN 1 AND 10: ")))
+            if 0 <= factorialNum <= 10:
+                returnedFactorial = repetition.get_factorial(factorialNum)
+                print('     '+str(returnedFactorial) +' IS THE FACTORIAL OF '+str(factorialNum))
+                print('')
+                on = False
+    
+    elif menuSelect == 2:
+        on = True
+        while on:
+            sumOddNumInput = int((input("ENTER A NUMBER BETWEEN 1 AND 100: ")))
+            if 0 <= sumOddNumInput <= 100:
+                returnedSum = repetition.sum_odd_numbers(sumOddNumInput)
+                print('THE SUM OF ODD NUMBERS UP TO '+str(sumOddNumInput)+' IS: '+str(returnedSum))
+                print('')
+                on = False
+    
+    elif menuSelect == 3:
+        break
+
+    else:
+        print('')
+        print('ERROR. ENTER THE NUMBER OF YOUR SELECTION.')
+        print('')
