@@ -3,7 +3,7 @@ menu = True
 while menu:
     print("HOMEWORK 3 MENU")
     print("1 - FACTORIAL")
-    print("2 -SUM ODD NUMBERS")
+    print("2 - SUM ODD NUMBERS")
     print("3 - EXIT")
     menuSelect = int((input ('')))
     if menuSelect == 1:
