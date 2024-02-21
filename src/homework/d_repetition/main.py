@@ -33,7 +33,12 @@ while menu:
                 on = False
     
     elif menuSelect == 3:
-        break
+        on = True
+        while on:
+            confirmation = input('Are you sure? y/n: ')
+            if confirmation == 'y' or confirmation == 'yes':
+                menu = False
+            on = False
 
     else:
         print('')
