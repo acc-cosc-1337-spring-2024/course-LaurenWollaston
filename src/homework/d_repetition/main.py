@@ -14,6 +14,9 @@ while menu:
                 returnedFactorial = repetition.get_factorial(factorialNum)
                 print('     '+str(returnedFactorial) +' IS THE FACTORIAL OF '+str(factorialNum))
                 print('')
+                userExitQuery = input('Do you want to exit? y/n: ')
+                if userExitQuery =='yes' or userExitQuery =='y':
+                    menu=False
                 on = False
     
     elif menuSelect == 2:
@@ -24,6 +27,9 @@ while menu:
                 returnedSum = repetition.sum_odd_numbers(sumOddNumInput)
                 print('THE SUM OF ODD NUMBERS UP TO '+str(sumOddNumInput)+' IS: '+str(returnedSum))
                 print('')
+                userExitQuery = input('Do you want to exit? y/n: ')
+                if userExitQuery =='yes' or userExitQuery =='y':
+                    menu=False
                 on = False
     
     elif menuSelect == 3:
